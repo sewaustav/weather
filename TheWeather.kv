@@ -1,0 +1,19 @@
+Weather:
+
+<Weather@GridLayout>:
+    cols: 1
+    Label:
+        text: root.result
+    TextInput:
+        color: 0, 0, 0, 1
+        multiline: False
+        size_hint: 1, None
+        height: "100dp"
+        background_color: .75, .96, .5, 1
+        on_text_validate: root.weather(self)
+    Button:
+        text: "Click"
+        size_hint: 1, None
+        height: "100dp"
+        background_color: .2, 2, .2, 1
+        on_press: root.click()
